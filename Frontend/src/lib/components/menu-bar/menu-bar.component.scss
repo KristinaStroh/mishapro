@@ -1,0 +1,36 @@
+@use "@angular/material" as mat;
+
+mat-toolbar.mat-primary {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.small-spacer {
+  padding: 8pt;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.header-title {
+  cursor: pointer;
+  color: white,
+}
+
+.header-subtitle {
+  font-size: 14px; /* Kleinere Schriftgröße */
+  color: gray; /* Helle Farbe, damit es sich abhebt */
+  margin-left: 10px; /* Abstand zum Haupttitel */
+}
+
+.shadow {
+  @include mat.elevation(4);
+}
+
+.navitems-container {
+  display: flex;
+  flex-flow: row;
+  gap: 16px;
+}
